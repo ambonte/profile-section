@@ -1,0 +1,132 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box
+}
+
+.container{
+    font-size: 20x;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:hsl(185, 75%, 39%);
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background:hsl(185, 75%, 39%);
+
+}
+
+
+
+/*styling the background pictures++++++++++++++++++++++++++++++++++++++++*/
+
+.top-background{
+    min-height: 100vh;
+    width: 50%;
+}
+
+.bottom-background{
+    min-height: 100vh;
+    width: 50%;
+}
+
+.back1, .back2{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.back1{
+    
+transform: rotate(45deg);
+transform: translateX(-10vw)!important;
+transform: translateY(-400px)!important;
+position: fixed;
+top: 0;
+left: -42vw;
+}
+
+.back1{
+    
+    transform: rotate(-10deg);
+    transform: translateX(10vw)!important;
+    transform: translateY(400px)!important;
+    position: fixed;
+    bottom: 0;
+    right: -42vw;
+    }
+
+    @media screen and (max-width:500px){
+        .back1{transform: translateY(-350px)!important; left:-50vw; }
+        .back2{transform: translateY(350px)!important; right:-50vw;}
+
+    }
+
+/*card container=================================*/
+
+.card-container{
+    width: 330px;
+    height: 430px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:1px 1px 1px 1px skyblue;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.upper-container{
+    height: 140px;
+    background-image: url("../images/bg-pattern-card.svg");
+    border-radius: 5px;
+}
+
+.lower-container{
+    height: 280px;
+    padding: 20px;
+    padding-top: 80px;
+    
+}
+
+.image-container {
+    background:white;
+    width:120px;
+    height: 120px;
+    border-radius:50%;
+    padding:5px;
+    transform: translate(100px, 100px);
+}
+
+.image-container img{
+    background:white;
+    width:120px;
+    height: 120px;
+    border-radius:50%;
+}
+
+
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .names{
+      justify-content: center;
+      text-align: center;
+      
+      
+  }
+
+ .stats .row{
+     text-align: center;
+ }
